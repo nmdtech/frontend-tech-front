@@ -1,0 +1,146 @@
+//this is responsive design
+$sm: 577px;
+$md: 769px;
+$lg: 993px;
+$tab:1025px;
+$xl: 1201px;
+$offsetScreen: 1150px;
+
+@mixin respond-to($point) {
+
+  @if $point == $xl {
+    @media (max-width: $xl - 1 ) { @content ; }
+  }
+  @else if $point == $tab {
+    @media (max-width: $tab - 1) { @content ; }
+  }
+  @else if $point == $lg {
+    @media (max-width: $lg - 1) { @content ; }
+  }
+  @else if $point == $md {
+    @media (max-width: $md - 1)  { @content ; }
+  }
+  @else if $point == $sm {
+    @media (max-width: $sm - 1)  { @content ; }
+  }
+
+}
+
+//border radius
+@mixin border-radius($rad) {
+  -moz-border-radius: $rad;
+  -webkit-border-radius: $rad;
+  border-radius: $rad;
+}
+
+//colorful placeholders
+@mixin placeholder($color, $font-size, $align) {
+  ::-webkit-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+    text-align: $align;
+    font-weight: lighter;
+  }
+  ::-moz-placeholder {
+    color: $color;
+    font-size: $font-size;
+    text-align: $align;
+    font-weight: lighter;
+  }
+  ::-ms-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+    text-align: $align;
+    font-weight: lighter;
+  }
+  ::placeholder {
+    color: $color;
+    font-size: $font-size;
+    text-align: $align;
+    font-weight: lighter;
+  }
+}
+
+/*gradients
+/start, end is for left,right,top,bottom vars
+ */
+@mixin grad($color-start, $color-end, $end, $start) {
+  background: $color-end;
+  background: -moz-linear-gradient($end, $color-end 0%, $color-start 100%);
+  background: -webkit-linear-gradient($end, $color-end 0%,$color-start 100%);
+  background: linear-gradient(to $start, $color-end 0%,$color-start 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color-end, endColorstr=$color-start,GradientType=0);
+}
+
+// chrome only scrollbar, default works on Mozilla
+@mixin scrollbar($color) {
+  ::-webkit-scrollbar {
+    width: 0.65rem;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.4rem grey;
+    border-radius: 0.5rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $color;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: $color;
+    scrollbar-arrow-color: $color;
+    scrollbar-base-color: $color;
+  }
+}
+
+
+//rotate elements
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin links($color, $hoverColor) {
+  a {
+    &:link, &:hover, &:active, &:visited {
+      color: $color;
+      text-decoration: none;
+    }
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+}
+
+@mixin alert-theme($bgAmount) {
+  background: lighten($theme, $bgAmount);
+  color: darken($theme, 15%);
+  a {
+    color: darken($theme, 20%) !important;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@mixin alt-sticky($pos) {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: $pos !important;
+  z-index: 1019;
+}
+
+// ----------------- add your own web site mixins below------------
+
+@mixin d-n {
+  display: none !important;
+}
+
+@mixin d-b {
+  display: block !important;
+  float: none;
+  clear: both;
+}

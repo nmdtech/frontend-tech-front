@@ -1,0 +1,3 @@
+.alert-theme {
+  @include alert-theme(33%) //change the amount of theme color dissolution for alert background
+}

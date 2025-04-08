@@ -1,0 +1,35 @@
+//customized media  - images / videos
+.img-grayscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 650ms;
+  -webkit-transition: -webkit-filter 650ms;
+}
+.img-grayscale:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.img-rotate {
+  transition-property: transform;
+  transition-duration: 1s;
+  &:hover {
+    transform: rotate(720deg);
+  }
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+// --------------------------------------------
+//Don't change above lines
+//Add your website specific custom styles below

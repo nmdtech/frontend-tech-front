@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/assets/images/icons/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        #reg-form {border: 1px solid #BBB;}
+    </style>
+    <title>Register to NMD</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row py-4 d-flex justify-content-center">
+        <div class="col-6 py-2 " id="reg-form">
+            <h5 class="display-5 text-center">Register</h5>
+
+            <form class="row g-3 py-3" action="#" method="post">
+                <div class="col-md-6 form-group">
+                    <label for="fName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="fName" name="fName" onblur="validateFName()">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="lName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lName" name="lName">
+
+                </div>
+                <div class="col-12 form-group">
+                    <label for="usermail" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="usermail" placeholder="name@example.com" name="usermail">
+                </div>
+                <div class="col-12 form-group">
+                    <label for="pass" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="pass" name="pass">
+                </div>
+                <div class="col-12 form-group">
+                    <label for="pass2" class="form-label">Retype Password</label>
+                    <input type="password" class="form-control" id="pass2" name="pass2">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="phone" class="form-label">City</label>
+                    <input type="text" class="form-control" id="phone" name="phone">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select id="gender" class="form-select" name="gender">
+                        <option selected>Choose...</option>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                    </select>
+                </div>
+                <div class="col-md-2 form-group">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="text" class="form-control" id="age" name="age" maxlength="2">
+                </div>
+                <div class="col-12 form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="logged-ok" name="logged-ok">
+                        <label class="form-check-label" for="logged-ok">
+                            Log Me In
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" name="register" id="register">Register</button>
+                    <span id="submit-error" class="text-danger"></span>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/js/user.js"></script>
+</body>
+</html>
