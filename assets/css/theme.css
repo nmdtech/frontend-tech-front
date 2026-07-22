@@ -197,43 +197,21 @@ body {
     color: aquamarine !important;
 }
 
-
 /* =====================
  PROJECTS
 ===================== */
 
-
 .project-img {
-
-
     width:100%;
-
     height:280px;
-
     object-fit:cover;
-
-
     border-radius:25px;
-
-
     transition:.4s;
-
-
 }
-
-
 
 .project-img:hover {
-
-
     transform:scale(1.05);
-
-
 }
-
-
-
-
 
 /* =====================
  TESTIMONIAL
@@ -241,172 +219,72 @@ body {
 
 
 .testimonial {
-
-
     max-width:800px;
-
     margin:auto;
-
-
     background:#111426;
-
-
     padding:50px;
-
-
     border-radius:30px;
-
-
 }
-
-
 
 .testimonial p {
-
-
     font-size:22px;
-
     color:white;
-
     font-style:italic;
-
-
 }
-
-
-
-
 
 /* =====================
  CTA
 ===================== */
-
-
 .cta {
-
-
     padding:120px 0;
-
-
-    background:
-
-
-            linear-gradient(
-
-                    135deg,
-
-                    #6c63ff,
-
-                    #8b5cf6
-
-            );
-
-
+    background: linear-gradient(135deg, #6c63ff, #8b5cf6);
 }
-
-
 
 .cta h2 {
-
-
     font-size:55px;
-
     font-weight:800;
-
 }
-
-
-
-
 
 /* =====================
  FOOTER
 ===================== */
-
-
 footer {
-
-
     background:#05060d;
-
-
     padding:70px 0 30px;
-
-
 }
-
-
 
 footer h3 {
-
-
     color:white;
-
 }
-
-
 
 footer h5 {
-
-
     color:white;
-
     margin-bottom:20px;
-
-
 }
-
-
 
 footer p {
-
-
     color:#888;
-
-
 }
-
-
-
 
 /* =====================
  RESPONSIVE
 ===================== */
 
-
 @media(max-width:991px){
-
-
     .hero {
-
         padding-top:120px;
-
     }
-
 
     .hero-img {
-
         margin-top:50px;
-
         height:400px;
-
     }
-
 
     .section h2 {
-
         font-size:35px;
-
     }
-
-
 
     .cta h2 {
-
         font-size:38px;
-
     }
-
-
-
 }
