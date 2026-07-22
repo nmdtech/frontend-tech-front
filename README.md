@@ -4,7 +4,7 @@ A modern, responsive business website template designed with premium effects, fo
 
 ## 🌐 Live Demo
 
-🔗 https://nmdtech.nmdglobal.workers.dev/
+🔗 <a href="https://nmdtech.nmdglobal.workers.dev/" target="_blank"> https://nmdtech.nmdglobal.workers.dev/ </a>
 
 ---
 
