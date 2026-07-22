@@ -189,15 +189,13 @@ body {
 
 
 .section h3 {
-
-
     color:var(--primary);
-
     font-size:50px;
-
-
 }
 
+.text-success-mod {
+    color: aquamarine !important;
+}
 
 
 /* =====================
