@@ -1,204 +1,106 @@
 :root {
-
     --primary: #6c63ff;
     --secondary: #8b5cf6;
     --dark: #070914;
     --dark-card: #111426;
     --text-muted: #a6a8b8;
-
 }
 
-
 * {
-
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
-
 
 body {
-
     background:var(--dark);
     color:white;
-    font-family:
-            "Inter",
-            "Segoe UI",
-            Arial,
-            sans-serif;
-
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
     overflow-x:hidden;
-
 }
-
-
 
 /* =====================
    NAVBAR
 ===================== */
 
-
 .navbar {
-
     padding:20px 0;
-
-    background:
-            rgba(7,9,20,.65);
-
+    background: rgba(7,9,20,.65);
     backdrop-filter:blur(15px);
-
 }
-
 
 .navbar-brand {
-
     letter-spacing:1px;
-
 }
 
-
 .navbar-brand span {
-
     color:var(--primary);
-
 }
 
 
 .nav-link {
-
     color:#ddd !important;
     margin:0 12px;
     transition:.3s;
-
 }
-
 
 .nav-link:hover {
-
     color:white !important;
-
 }
-
-
 
 /* =====================
  HERO
 ===================== */
 
-
 .hero {
-
     min-height:100vh;
-
     display:flex;
-
     align-items:center;
-
-
     background:
-
-            radial-gradient(
-                    circle at 90% 20%,
-                    rgba(108,99,255,.35),
-                    transparent 35%
-            ),
-
-            radial-gradient(
-                    circle at 10% 80%,
-                    rgba(139,92,246,.2),
-                    transparent 30%
-            );
-
+            radial-gradient(circle at 90% 20%, rgba(108,99,255,.35), transparent 35%),
+            radial-gradient(circle at 10% 80%, rgba(139,92,246,.2), transparent 30%);
 }
 
-
-
 .badge-text {
-
     color:#aaa;
     letter-spacing:3px;
     font-size:14px;
-
 }
-
 
 .hero h1 {
-
-    font-size:clamp(45px,5vw,75px);
-
+    font-size:clamp(38px,5vw,65px);
     font-weight:800;
-
     line-height:1.1;
-
 }
-
 
 .hero h1 span {
-
-    background:
-            linear-gradient(
-                    90deg,
-                    #6c63ff,
-                    #c084fc
-            );
-
+    background: linear-gradient(90deg, #6c63ff, #c084fc);
     -webkit-background-clip:text;
-
     color:transparent;
-
 }
-
-
 
 .hero-text {
-
     color:var(--text-muted);
-
     font-size:20px;
-
     max-width:600px;
-
     line-height:1.7;
-
 }
-
-
 
 .hero-img {
-
-
     width:100%;
-
     height:550px;
-
     object-fit:cover;
-
     border-radius:35px;
-
-
-    box-shadow:
-
-            0 30px 100px rgba(0,0,0,.6);
-
+    box-shadow: 0 30px 100px rgba(0,0,0,.6);
 }
-
-
-
 
 .hero h3 {
-
     color:white;
-
     font-size:35px;
-
 }
 
-
 .hero .row p {
-
     color:#888;
-
 }
 
 
