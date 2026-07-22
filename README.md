@@ -1,6 +1,6 @@
 # NMD Tech - Digital Creative Agency Website 🚀
 
-A modern, responsive business website template designed for **NMD Tech**, a digital creative agency focused on building high-performance websites, web applications, and digital experiences.
+A modern, responsive business website template designed with premium effects, for a digital creative agency focused on building high-performance websites, web applications, and digital experiences.
 
 ## 🌐 Live Demo
 
